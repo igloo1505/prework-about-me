@@ -1,8 +1,9 @@
 body {
   color: #222222;
   font-size: 1em;
-  margin: 6px 6px !important;
+  margin: 0px !important;
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  overflow-x: hidden;
 }
 
 .content-footer,
@@ -13,13 +14,15 @@ body {
 
 .masthead {
   background-image: url("../img/code.jpg");
+  margin: 0px 6px;
   min-height: 60vh;
   height: 500px;
   background-attachment: fixed;
-  border-radius: 10px 10px 50px 50px;
+  border-radius: 10px 10px 20px 20px;
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 
 #wrap {
   position: absolute;
@@ -44,24 +47,25 @@ body {
 }
 
 .details {
-  max-width: 38em;
+  max-width: 50vw;
   margin-left: auto;
   margin-right: auto;
   margin-top: 2em;
+  background-color: #ffffff;
 }
 
-.details > p {
+.details>p {
   font-weight: 300;
   letter-spacing: 0.05em;
 }
 
-.details > h2 {
+.details>h2 {
   font-size: 1.2em;
   font-weight: bold;
   margin: 2em 0 1em 0;
 }
 
-section > h1 {
+section>h1 {
   margin-top: 2em;
 }
 
@@ -69,14 +73,22 @@ section > h1 {
   padding: 10px 0;
   text-align: center;
   background-color: #111111;
-  text-decoration: none;
+  /* visibility: hidden; */
+  opacity: 0;
 }
 
 #footer a {
   color: #ffffff;
+  text-decoration: none;
 }
 
-.social > li {
+.social>li {
   display: inline-block;
   margin: 0 5px;
+}
+
+.show {
+  /* visibility: visible; */
+  opacity: 1;
+  transition: opacity 2s 2s;
 }
