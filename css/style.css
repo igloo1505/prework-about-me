@@ -117,12 +117,16 @@ section>h1 {
   text-decoration: none;
 }
 
-
+.social {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  padding-inline-start: 0px;
+}
 
 .social>li {
   display: inline-block;
   margin: 0 5px;
-  transform: translateX(-50%);
 }
 
 .show {
