@@ -6,6 +6,9 @@ let offSet = (h / 2) - (16 * 4);
 let offSetpx = `${offSet}px`;
 document.getElementById('wrap').style.top = offSetpx;
 
+let wit = window.innerWidth;
+console.log(wit);
+
 
 // Cheesy Fade-in/out effects
 document.onscroll = () =>  {
@@ -29,4 +32,6 @@ else {
     footer.style.opacity = 0;
     footer.style.transition = 'opacity .5s'
 }
+
+
 }
