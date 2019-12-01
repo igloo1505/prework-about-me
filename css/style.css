@@ -1,63 +1,65 @@
 body {
   color: #222222;
   font-size: 1em;
-  margin: 0px !important;
+  margin: 0px;
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
   overflow-x: hidden;
-  min-width: 100%;
 }
 
 .content-footer,
 .masthead-heading,
 .masthead-intro {
   text-align: center;
-  width: 100vw;
 }
 
 .masthead {
   background-image: url("../img/code.jpg");
-  margin: 0px 6px;
+  margin: 0px;
   min-height: 60vh;
   height: 500px;
   background-attachment: fixed;
   border-radius: 10px 10px 20px 20px;
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
 
 #wrap {
   position: absolute;
-  width: 100%;
+  width: 90%;
   left: 50%;
   transform: translateX(-50%);
 }
 
 
 
-.masthead-intro {
-  margin: 0.1em;
-  font-size: 2em;
-  color: #ffffff;
-}
 
-.masthead-heading {
-  margin: -0.2em;
-  font-weight: bold;
-  font-size: 6em;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
-  color: #ffffff;
-}
 
 @media(max-width: 600px) {
   .details {
-    max-width: 80vw !important;
+    max-width: 80vw;
     margin-left: auto;
     margin-right: auto;
     margin-top: 2em;
     background-color: #ffffff;
   }
+
+  .masthead-intro {
+    margin: 0.1em;
+    font-size: 12vw;
+    color: #ffffff;
+  }
+
+  .masthead-heading {
+    margin: -0.2em;
+    font-weight: bold;
+    font-size: 12vw;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
 }
 
 
@@ -68,6 +70,21 @@ body {
     margin-right: auto;
     margin-top: 2em;
     background-color: #ffffff;
+  }
+
+  .masthead-intro {
+    margin: 0.1em;
+    font-size: 2em;
+    color: #ffffff;
+  }
+
+  .masthead-heading {
+    margin: -0.2em;
+    font-weight: bold;
+    font-size: 6em;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #ffffff;
   }
 }
 
@@ -105,10 +122,10 @@ section>h1 {
 .social>li {
   display: inline-block;
   margin: 0 5px;
+  transform: translateX(-50%);
 }
 
 .show {
-  /* visibility: visible; */
   opacity: 1;
   transition: opacity 2s 2s;
 }

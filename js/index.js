@@ -8,7 +8,8 @@ document.getElementById('wrap').style.top = offSetpx;
 
 let wit = window.innerWidth;
 console.log(wit);
-
+    document.getElementById('masthead').style.width = `${wit}px`;
+document.getElementById('body').style.width = `${wit}px`;
 
 // Cheesy Fade-in/out effects
 document.onscroll = () =>  {
@@ -23,10 +24,12 @@ var opacFooter = scrollTop + winHeight + footHeight;
 var showFooter = opacFooter - document.getElementById('body').clientHeight;
 
 
+
 var footer = document.getElementById('footer');
 if (showFooter > 60) {   
     footer.style.opacity = 1;
-    footer.style.transition = 'opacity 1s'
+    footer.style.transition = 'opacity 1s';
+    footer.style.width = `${wit}px`;
 } 
 else {
     footer.style.opacity = 0;
