@@ -1,12 +1,11 @@
 // Getting height of header element
 let h = document.getElementById('masthead').offsetHeight;
-// Half of header height - half of 1rem * 8rem,  heading height + intro height
-let offSet = (h / 2) - (16 * 4);
+let offSet = (h / 2) - (16 * 8);
 // turning number to a string and including px to insert into css
 let offSetpx = `${offSet}px`;
 document.getElementById('wrap').style.top = offSetpx;
 
-let wit = window.innerWidth;
+let wit = document.body.clientWidth;
 console.log(wit);
     document.getElementById('masthead').style.width = `${wit}px`;
 document.getElementById('body').style.width = `${wit}px`;
