@@ -4,6 +4,15 @@ body {
   margin: 0px;
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
   overflow-x: hidden;
+  /* width: 100%;
+  margin: 0 auto;
+  padding: 0px 20px 20px 20px; */
+}
+
+header {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px
 }
 
 .content-footer,
@@ -12,13 +21,13 @@ body {
   text-align: center;
 }
 
+
 .masthead {
   background-image: url("../img/code.jpg");
   margin: 0px;
   min-height: 60vh;
   height: 500px;
   background-attachment: fixed;
-
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -27,7 +36,6 @@ body {
 
 #wrap {
   position: absolute;
-  width: 90%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -40,13 +48,13 @@ body {
   .details {
     max-width: 80vw;
     margin-left: auto;
-    margin-right: 10vw;
+    margin-right: auto;
     margin-top: 2em;
     background-color: #ffffff;
   }
 
   .masthead {
-    width: fit-content;
+    /* width: 100%; */
   }
 
   .masthead-intro {
