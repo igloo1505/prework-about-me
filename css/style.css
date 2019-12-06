@@ -24,6 +24,7 @@ header {
 
 .masthead {
   background-image: url("../img/code.jpg");
+
   margin: 0px;
   min-height: 60vh;
   height: 500px;
@@ -40,6 +41,9 @@ header {
   transform: translateX(-50%);
 }
 
+.cursor-anim {
+  border-right: 3px solid white;
+}
 
 
 
@@ -53,9 +57,7 @@ header {
     background-color: #ffffff;
   }
 
-  .masthead {
-    /* width: 100%; */
-  }
+
 
   .masthead-intro {
     margin: 0.1em;
@@ -68,7 +70,6 @@ header {
     font-weight: bold;
     font-size: 12vw;
     letter-spacing: -0.02em;
-    text-transform: uppercase;
     color: #ffffff;
   }
 
@@ -102,8 +103,8 @@ header {
     font-weight: bold;
     font-size: 6em;
     letter-spacing: -0.02em;
-    text-transform: uppercase;
     color: #ffffff;
+
   }
 }
 

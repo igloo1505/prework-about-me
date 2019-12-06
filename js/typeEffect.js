@@ -17,7 +17,8 @@ class TypeAnim {
         } else if (!this.backSpace && this.displayText !== this.nameArray[2]){
             this.displayText = name.substring(0, this.displayText.length + 1);
         }
-        document.getElementById('insertname').innerHTML =`${this.displayText}`;
+        document.getElementById('nameInput').innerHTML =`${this.displayText}`;
+        
 
         let speed = 300;
         if(this.backSpace){
@@ -29,10 +30,10 @@ class TypeAnim {
             this.backSpace = true;
         
         }
-            else if(this.backSpace && this.displayText ===''){
+            else if(this.backSpace && this.displayText ==='A'){
                 this.backSpace = false;
                 this.arrayIndex++;
-                speed = 500;
+                speed = 300;
             }
             if(this.arrayIndex == this.nameArray.length){
             return
@@ -44,9 +45,22 @@ class TypeAnim {
     document.addEventListener('DOMContentLoaded', init);
 
         function init(){
-            const htmlEL = document.getElementById('insertName');
-            const nameArray = ['aweso', 'Amazi',
+            const htmlEL = document.getElementById('nameInput');
+            const nameArray = ['Aweso', 'Amazi',
             'Andrew'];
-            const waitBetween = 2000;
+            const waitBetween = 1500;
             new TypeAnim(htmlEL, nameArray, waitBetween);
         }
+
+        
+            var EL = document.getElementById('nameInput');
+        function addCursor(){
+            if(EL.classList.contains('cursor-anim') !==true){
+                EL.classList.add('cursor-anim')
+            }
+            else if(EL.classList.contains('cursor-anim') == true){EL.classList.remove('cursor-anim')}
+        
+            setTimeout(() => addCursor(), 500)
+        }
+        addCursor();
+    
