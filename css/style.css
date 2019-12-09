@@ -43,6 +43,12 @@ header {
 
 .cursor-anim {
   border-right: 3px solid white;
+  display: inline;
+}
+
+.cursor-toggle {
+  padding-right: 3px;
+  display: inline;
 }
 
 

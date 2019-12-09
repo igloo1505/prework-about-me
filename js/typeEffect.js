@@ -31,35 +31,38 @@ class TypeAnim {
         
         }
             else if(this.backSpace && this.displayText ==='A'){
+                speed = 800;
                 this.backSpace = false;
                 this.arrayIndex++;
-                speed = 300;
+                
             }
             if(this.arrayIndex == this.nameArray.length){
+                this.document.getElementById('cursor-anim').classList.remove('cursor-anim');
             return
             }
             setTimeout(() => this.typeEffect(), speed);
         }
     }
-
-    document.addEventListener('DOMContentLoaded', init);
+document.addEventListener('DOMContentLoaded', init);
 
         function init(){
             const htmlEL = document.getElementById('nameInput');
-            const nameArray = ['Aweso', 'Amazi',
+            const nameArray = ['Aweso', 'Amaz',
             'Andrew'];
-            const waitBetween = 1500;
+            const waitBetween = 500;
             new TypeAnim(htmlEL, nameArray, waitBetween);
         }
 
         
-            var EL = document.getElementById('nameInput');
+            var EL = document.getElementById('cursor-anim');
         function addCursor(){
-            if(EL.classList.contains('cursor-anim') !==true){
-                EL.classList.add('cursor-anim')
+            if(EL.classList.contains('cursor-toggle') !==true){
+                EL.classList.add('cursor-toggle');
+                EL.classList.remove('cursor-anim')
             }
-            else if(EL.classList.contains('cursor-anim') == true){EL.classList.remove('cursor-anim')}
-        
+            else if(EL.classList.contains('cursor-toggle') == true){EL.classList.remove('cursor-toggle');
+            EL.classList.add('cursor-anim')
+        }
             setTimeout(() => addCursor(), 500)
         }
         addCursor();
