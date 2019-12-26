@@ -53,7 +53,7 @@ section {
   display: inline;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .details {
     max-width: 80vw;
     margin-left: auto;
@@ -116,7 +116,7 @@ section {
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .details {
     max-width: 70vw;
     margin-left: auto;
