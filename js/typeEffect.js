@@ -12,9 +12,9 @@ class TypeAnim {
         const index = this.arrayIndex % this.nameArray.length;
         const name = this.nameArray[index];
 
-        if(this.backSpace && this.displayText !== this.nameArray[2]) {
+        if(this.backSpace && this.displayText !== this.nameArray[1]) {
             this.displayText = name.substring(0, this.displayText.length - 1);
-        } else if (!this.backSpace && this.displayText !== this.nameArray[2]){
+        } else if (!this.backSpace && this.displayText !== this.nameArray[1]){
             this.displayText = name.substring(0, this.displayText.length + 1);
         }
         document.getElementById('nameInput').innerHTML =`${this.displayText}`;
@@ -47,9 +47,9 @@ document.addEventListener('DOMContentLoaded', init);
 
         function init(){
             const htmlEL = document.getElementById('nameInput');
-            const nameArray = ['Aweso', 'Amaz',
+            const nameArray = ['Awesome',
             'Andrew'];
-            const waitBetween = 500;
+            const waitBetween = 2000;
             new TypeAnim(htmlEL, nameArray, waitBetween);
         }
 
