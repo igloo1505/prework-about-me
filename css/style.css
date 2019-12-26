@@ -4,9 +4,6 @@ body {
   margin: 0px;
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
   overflow-x: hidden;
-  /* width: 100%;
-  margin: 0 auto;
-  padding: 0px 20px 20px 20px; */
 }
 
 header {
@@ -23,7 +20,6 @@ header {
 
 .masthead {
   background-image: url("../img/code.jpg");
-
   margin: 0px;
   min-height: 60vh;
   height: 500px;
@@ -37,6 +33,10 @@ header {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.holder > img {
+  opacity: 0.8;
 }
 
 .cursor-anim {
@@ -55,7 +55,13 @@ header {
     margin-left: auto;
     margin-right: auto;
     margin-top: 2em;
-    background-color: #ffffff;
+  }
+  .quote {
+    width: 70%;
+    border-right: #222222 solid 1px;
+    border-left: #222222 solid 1px;
+    text-align: center;
+    background-color: #e9ecf0;
   }
 
   .masthead-intro {
@@ -73,20 +79,42 @@ header {
   }
 }
 
+@media (min-width: 1100px) {
+  .holder {
+    height: 400px;
+    width: 100%;
+    padding: 20px;
+  }
+  .holder > img {
+    max-height: 90%;
+    width: auto;
+  }
+}
+@media (max-width: 1100px) {
+  .holder > img {
+    display: none;
+  }
+}
+
 @media (min-width: 600px) {
   .details {
-    max-width: 50vw;
+    max-width: 70vw;
     margin-left: auto;
     margin-right: auto;
     margin-top: 2em;
     background-color: #ffffff;
   }
+  .quote {
+    width: 50%;
+    border-right: #222222 solid 1px;
+    border-left: #222222 solid 1px;
+    text-align: center;
+  }
 
   .masthead {
-    max-width: 95%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 10px 10px 20px 20px;
   }
 
   .masthead-intro {
