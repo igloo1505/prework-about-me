@@ -87,7 +87,6 @@ section {
     background-image: url("../img/code.jpg");
     margin: 0px;
     min-height: 60vh;
-    background-size: 500;
     background-attachment: fixed;
     background-repeat: no-repeat;
   }

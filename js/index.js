@@ -10,6 +10,11 @@ let wit = document.body.clientWidth;
     document.getElementById('masthead').style.width = `${wit}px`;
 document.getElementById('body').style.width = `${wit}px`;
 
+var Height = window.innerHeight;
+var Size = (Height * .65);
+document.getElementById('masthead').style.backgroundSize == Size;
+console.log(Size)
+
 
 
 
