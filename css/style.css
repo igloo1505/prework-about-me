@@ -22,7 +22,7 @@ section {
   text-align: center;
 }
 
-.masthead {
+/* .masthead {
   background-image: url("../img/code.jpg");
   margin: 0px;
   min-height: 60vh;
@@ -31,7 +31,7 @@ section {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
+} */
 
 #wrap {
   position: absolute;
@@ -53,7 +53,7 @@ section {
   display: inline;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .details {
     max-width: 80vw;
     margin-left: auto;
@@ -86,13 +86,9 @@ section {
   .masthead {
     background-image: url("../img/code.jpg");
     margin: 0px;
-    background-size: auto;
     min-height: 60vh;
-    height: 500px;
-    background-attachment: fixed;
     background-size: cover;
-    background-position-x: left;
-    background-position-y: bottom;
+    background-attachment: fixed;
     background-repeat: no-repeat;
   }
 }
@@ -116,7 +112,7 @@ section {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .details {
     max-width: 70vw;
     margin-left: auto;
@@ -132,11 +128,11 @@ section {
     text-align: center;
   }
 
-  .masthead {
+  /* .masthead {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-  }
+  } */
 
   .masthead-intro {
     margin: 0.1em;
@@ -150,6 +146,17 @@ section {
     font-size: 6em;
     letter-spacing: -0.02em;
     color: #ffffff;
+  }
+
+  .masthead {
+    background-image: url("../img/code.jpg");
+    margin: 0px;
+    min-height: 60vh;
+    height: 500px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
 

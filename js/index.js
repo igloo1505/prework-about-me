@@ -6,9 +6,12 @@ let offSetpx = `${offSet}px`;
 document.getElementById('wrap').style.top = offSetpx;
 
 let wit = document.body.clientWidth;
-console.log(wit);
+
     document.getElementById('masthead').style.width = `${wit}px`;
 document.getElementById('body').style.width = `${wit}px`;
+
+
+
 
 // Cheesy Fade-in/out effects
 document.onscroll = () =>  {
@@ -35,6 +38,7 @@ if (showFooter > 60) {
 
 
 }
+
 
 
 
