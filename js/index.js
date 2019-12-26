@@ -25,15 +25,13 @@ var showFooter = opacFooter - document.getElementById('body').clientHeight;
 
 
 var footer = document.getElementById('footer');
+
 if (showFooter > 60) {   
     footer.style.opacity = 1;
     footer.style.transition = 'opacity 1s';
     footer.style.width = `${wit}px`;
 } 
-else {
-    footer.style.opacity = 0;
-    footer.style.transition = 'opacity .5s'
-}
+
 
 
 }
