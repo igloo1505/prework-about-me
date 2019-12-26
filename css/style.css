@@ -53,7 +53,7 @@ section {
   display: inline;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .details {
     max-width: 80vw;
     margin-left: auto;
@@ -87,7 +87,7 @@ section {
     background-image: url("../img/code.jpg");
     margin: 0px;
     min-height: 60vh;
-    background-size: cover;
+    background-size: 500;
     background-attachment: fixed;
     background-repeat: no-repeat;
   }
@@ -112,7 +112,7 @@ section {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .details {
     max-width: 70vw;
     margin-left: auto;
