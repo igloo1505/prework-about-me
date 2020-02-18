@@ -13,10 +13,10 @@ document.getElementById("body").style.width = `${wit}px`;
 var Height = window.innerHeight;
 var Size = Height * 0.65;
 document.getElementById("masthead").style.backgroundSize == Size;
-console.log(Size);
+// console.log(Size);
 
 //!! Ambitious, but I'll make it happen
-let skills = [];
+let skills = ["Being awesome"];
 let d = new Date().getFullYear();
 let m = new Date().getMonth();
 if (d >= 2020) {
@@ -28,9 +28,8 @@ if (m >= 3) {
 if (d === 2020 && m >= 6) {
   alert("SQL and Django in progress");
 }
-console.log(d, m);
 
-console.log(skills);
+console.log(`Skills: ${skills}`);
 // Cheesy Fade-in/out effects
 document.onscroll = () => {
   var scrollTop = window.pageYOffset;
